@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+<!--        两种按钮的实现方式-->
+        <input type="button" value="button">
+<!--        button用来和js合作，并且绑定事件的-->
+        <button>button</button>
+        <input type="submit" value="提交">
+
+<!--        类似于滑表 min max代表滑块最大最小值-->
+<!--        step表示滑动的步长-->
+<!--        value代表起始值-->
+        <input type="range" min="50" max="100" step="20" value="60">
+
+<!--number元素只能输入/选择数字，同时有min max step等-->
+        <input type="number">
+
+<!--        check是选择打勾(多选)-->
+        <input type="checkbox">
+
+<!--        radio是单选，圆形-->
+        <input type="radio">
+        <br>
+        程序员最帅的是谁
+<!--        如果name元素相同，就限定表单到同一个，只能选其一-->
+        <input type="radio" value="123" name="1"><br>
+        <input type="radio" value="123" name="1"><br>
+        <input type="radio"value="123" name="1"><br>
+
+
+<!--        select是选择下拉框 option 是其中的选项-->
+        <select>
+            <option>苹果</option>
+            <option>苹果</option>
+            <option>苹果</option>
+        </select>
+
+<!--        datalist也是下拉选项框，但是可以手动输入其他选项，但要有一个input text与其id匹配，如下：-->
+        <input type="text" list="datalist1">
+        <datalist id = "datalist1">
+            <option>苹果</option>
+            <option>香蕉</option>
+        </datalist>
+
+    </form>
+</body>
+</html>
+
+
+
+
+<!--按钮功能比较 button>input button>input submit -->
+
+<!--注意datalist用法-->

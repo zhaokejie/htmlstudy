@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 表格元素</title>
+</head>
+<body>
+<!--    border为边框宽度，但已经不太使用了-->
+    <table border = "1px">
+<!--        tr为一行的单元格-->
+        <thead>
+            <tr>
+                <!--            th会加粗居中，相当于表格表头，一般用于最上/左面一行-->
+                <th>admin</th>
+                <th>admin1</th>
+                <th>admin2</th>
+            </tr>
+        </thead>
+        <tr>
+<!--            td为一个单元格-->
+            <td>adminfgfggfgfgfg</td>
+            <td>admin1</td>
+            <td>admin2</td>
+        </tr>
+        <tr>
+            <!--            td为一个单元格-->
+            <td>哈哈</td>
+            <td>呵呵</td>
+            <td>嘿嘿</td>
+        </tr>
+        <tfoot>
+            <td>2312321</td>
+        </tfoot>
+    </table>
+
+
+    <table border = "1px">
+    <br>
+        <tr>
+            <td rowspan="2">哈哈</td>
+            <td>呵呵</td>
+            <td>嘿嘿</td>
+        </tr>
+        <tr>
+            <td colspan="2">呵呵</td>
+
+        </tr>
+        <tr>
+            <td>哈哈</td>
+            <td>呵呵</td>
+            <td>嘿嘿</td>
+        </tr>
+
+    </table>
+</body>
+</html>
+
+<!--html特性：作者不需要担心尺寸问题，会保证最大显示-->
+----------------------------------------------------------
+thead是表头
+tfoot是表尾
+
+colspan合并行单元格
+
+rowspan合并列单元格

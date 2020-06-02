@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css设置背景</title>
+    <style>
+        .clsb{
+
+            /*设置边框以便于把图片完全显示*/
+            width: 800px;
+            height: 600px;
+            /*设置背景颜色和图片*/
+            background-color: blueviolet;
+            background-image: url("wm.png");
+            /*背景的重复方式，比如如果图片很小但设置后也不会平铺*/
+            background-repeat: no-repeat;
+
+            /*规定背景图像的尺寸或着扩大比例方式*/
+            background-size: cover;
+
+            /*让图片跟着滚动一起滚动*/
+            background-attachment: fixed;
+            /*不会随着滚动滚动*/
+            background-attachment: local;
+        }
+    </style>
+</head>
+<body>
+    <p class="clsb">这是背景设置测试</p>
+</body>
+</html>
+
+
+body也可以设置class和样式

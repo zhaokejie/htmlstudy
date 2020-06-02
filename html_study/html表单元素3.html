@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html表单3</title>
+</head>
+<body>
+    <form>
+<!--        可以自动判断格式是否正确-->
+        <input type="email">
+        <input type = "tel">
+        <input type="url">
+
+<!--        可以选择年月日（日期） 但不是所有浏览器都能提供选择功能-->
+        <input type="date">
+
+<!--        获取颜色值的-->
+        <input type = "color">
+
+<!--        获取搜索用词，可能不太有用-->
+        <input type = "search">
+
+<!--        隐藏的看不到的input，但是提交的时候却存在-->
+        <input type="hidden">
+<!--        可以点击的图片按钮，并且通过get方式上传光标在图片的坐标xy-->
+        <input type="image" src="wm.png" width="80px">
+<!--        上传文件的表单   Multiple一次允许上传多个文件按ctrl   required必须上传一个文件-->
+<!--        当用input元素上传文件提交表单时，要设置以下内容-->
+<!--        <form enctype="multipart/form-data"></form>-->
+        <input type="file">
+        <input type="file" multiple>
+    </form>
+</body>
+</html>

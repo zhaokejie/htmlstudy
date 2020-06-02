@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html嵌入图片和分区相应图</title>
+</head>
+<body>
+
+<!--img为添加图片 width会同时将高度自适应，除非加上height分别设置宽高-->
+<!--alt为备用按钮，若图片找不到则用alt代替-->
+<img src="wm.png" width="80px " alt="下载按钮">
+
+<!--利用图片设置超链接 在a标签中包含img元素-->
+
+<a href="http://www.baidu.com">  <img src = "wm.png"></a>
+
+
+<form>
+    <input type="image" src="wm.png" width="100px">
+</form>
+
+
+<!--分区响应图：让点击图像不同的区域到浏览器的不同url上-->
+
+<!--map是分区相应图的标签，需要在img中用usemap，name前加#， area是其中的区域（可点击的区域）-->
+
+<img src="wm.png" width="100px" usemap="#map1">
+<map name="map1">
+<!--    area包含href和alt两个元素-->
+<!--    rect用四个坐标标定一个矩形区域,还有其他形状-->
+    <area href="first.html" alt="haha" shape="rect" coords="16,16,55,100">
+    <area>
+    <area>
+    <area>
+    <area>
+</map>
+</body>
+</html>
+
+
+<!--alt是图片src 找不到后的替代-->
+
+<!--分区响应图：让点击图像不同的区域到浏览器的不同url上-->
+
+<!--id和name的区别，id唯一，name可重复-->

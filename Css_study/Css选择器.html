@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建Css选择器</title>
+    <style type="text/css">
+        /*根据类型选择一个元素*/
+        p{
+            font-size: 50px;
+            color: bisque;
+        }
+        /*用*选择所有元素*/
+        .class1 {
+            font-size: 60px;
+            color: aquamarine;
+        }
+        /*用#选择用id选择样式*/
+        #id1:hover{
+            color: firebrick;
+        }
+        /*属性选择器，可以用类似[href]或者[href = "www.xxx.com"]两种形式（包含属性值或者不包含属性值）*/
+        [href]{
+            font-size: 100px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <a class="class1">stephen</a>
+    <a class="class1" href="www.baidu.com">stephen</a>
+<!--    class是一个全局属性，也就是所有标签都有-->
+<!--    P标签代表段落-->
+
+    <p>stephen</p>
+    <br>
+    <p id="id1">stephen</p>
+    <h1 class="class1">stephen</h1>
+</body>
+</html>
+
+
+<!--根据类选择元素用class-->
+<!--用点.加类属性值，类似“.class1”-->
+<!--设置后只要类一样，都会使用同样属性-->
+
+
+<!--根据id选择元素用id-->
+<!--id也是全局标签-->
+<!--用井号#加id属性值设置id选择，类似“#id1”-->
+<!--！！！！id是唯一的属性！！！！每个标签都唯一-->
+
+
+<!--属性选择器，根据属性选择元素-->
+<!--类似[href]，可以同时加属性名和属性值-->
+
+<!--选择器动作-->
+<!--冒号选择器可以在文档样式设置时在属性名后面加冒号-->
+<!--类似a:hover{xxx}为当鼠标经过的时候变换为该形式-->
