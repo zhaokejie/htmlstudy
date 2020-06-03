@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css过渡动画</title>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: #61d3ff;
+            color: white;
+        }
+        /*光标经过后的动作*/
+        p:hover{
+            width: 200px;
+            height: 200px;
+            background-color: firebrick;
+
+            /*设置动作等待延迟*/
+            transition-delay: 100ms;
+
+            /*动作播放的时间*/
+            transition-duration: 500ms;
+
+            /*设置只有颜色平滑变化,也可以设置只有形状平滑变化*/
+            transition-property: color;
+
+
+
+
+
+            /*设置浏览器支持*/
+            /*谷歌oprea和火狐*/
+            /*-webkit-transition-duration:;*/
+            /*-o-transition-duration: ;*/
+            /*-moz-animation-duration: ;*/
+
+
+        }
+    </style>
+</head>
+<body>
+<p>呵呵啊哈哈</p>
+</body>
+</html>
