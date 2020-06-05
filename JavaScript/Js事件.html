@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js事件</title>
+    <script>
+        function f() {
+            var str = document.forms["forma"]["test"].value;
+            alert(str)
+
+        }
+    </script>
+</head>
+<body>
+<!--    <button onclick="alert(document.write('按钮被点击'))"></button>-->
+    <form name = "forma">
+        <input type="text" name="test">
+        <button value="按钮" style="width: 40px;height: 20px" onclick="f()"></button>
+    </form>
+</body>
+</html>
