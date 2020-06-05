@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css使用变换</title>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: #61d3ff;
+        }
+        p:hover{
+            width: 100px;
+            height: 100px;
+            background-color: #61d3ff;
+
+            /*添加变换角度，可能要加webkit等设置浏览器厂商*/
+            transform: rotate(45deg);
+            transform-origin: bottom right;/*设置旋转中心点*/
+
+            /*添加缩放角度*/
+            /*transform: scale(1.5);*/
+        }
+    </style>
+</head>
+
+<body>
+<p>
+    stephen
+</p>
+</body>
+</html>

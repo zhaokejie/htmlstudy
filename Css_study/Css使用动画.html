@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css创建动画</title>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+
+        }
+
+        p:hover{
+            animation-diruation: 500ms;
+            animation-delay: 200ms;
+
+            /*给动画设置名字*/
+            animation-name: steph;
+
+            /*数数，此处代表动画执行无限次*/
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes steph {
+
+            /*相当于设置动画的三个关键帧*/
+            from{
+                width: 100px;
+                height: 100px;
+                background-color: #a58484;
+            }
+
+            50%{
+                width: 150px;
+                height: 150px;
+                background-color: #895f5f;
+            }
+
+
+
+
+
+            to{
+                width: 200px;
+                height: 200px;
+                background-color: #812121;
+            }
+        }
+    </style>
+</head>
+<body>
+<p>
+
+</p>
+</body>
+</html>
